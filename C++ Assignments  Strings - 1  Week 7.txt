@@ -1,0 +1,82 @@
+1->
+
+#include <iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+   string s = "Pbwcshkuiglhlds";
+   int i = 0;
+   while(s[i] != '\0'){
+       if(i%2 != 0) cout<<"#";
+       else cout<<s[i];
+       i++;
+   }
+
+    return 0;
+}
+
+2->
+
+#include <iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+   string s = "pwians";
+   int i = 0;
+   int count = 0;
+   while(s[i] != '\0'){
+       if(s[i] == 'i' || s[i] == 'a' || s[i] == 'e' || s[i] == 'o' || s[i] == 'u') i++;
+       else count++;
+       i++;
+   }
+   cout<<count;
+
+    return 0;
+}
+
+3->
+
+#include <iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+   string s = "abcdcba";
+   int n = s.size();
+   string b = s.substr(0,n/2);
+   string a = s.substr(n/2+1);
+   reverse(a.begin(), a.end());
+   if(a == b) cout<<"true";
+   else cout<<"false";
+
+    return 0;
+}
+
+4->
+
+#include <iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+   string s = "abcdefgh";
+   int n = s.size();
+   string b = s.substr(0,n/2);
+   string a = s.substr(n/2);
+   reverse(a.begin(), a.end());
+   string x = b + a;
+   cout<<x;
+
+    return 0;
+}
+
+5->
+	i dont know sir
